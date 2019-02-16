@@ -17,4 +17,14 @@
   <p><span class="glyphicon glyphicon-phone-alt" style="font-size: x-large"></span> <b> <h3>551-209-6825</h3> </b></p>
   <div #gmap style="height: 80px;width: 100% "></div>
 
+  <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+
+  <agm-marker [latitude]="latitude" [longitude]="longitude" ></agm-marker>
+    
+  </agm-map>
+
+
+
+
+
 </div>

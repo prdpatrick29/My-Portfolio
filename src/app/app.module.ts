@@ -11,6 +11,8 @@ import { MeComponent } from './me/me.component';
 import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import {AgmCoreModule} from '@agm/core';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+    apiKey : 'AIzaSyAMy3nsSr-wt72t0__MNIu-PUwq7ZxlShg'
+})
   ],
   providers: [],
   bootstrap: [AppComponent]
